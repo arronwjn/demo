@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	.container{
+		width:1006px;
+		height:929px;
+		margin: 0 auto;
+	}
+	.header{
+		width:989px;
+		height:401px;
+		margin-left:8px;}
+	.top{
+		width:989px;
+		height:97px;}
+	.logo{
+		width:152px;
+		height:33px;
+		float:left;
+		background-image: url(images/logo.gif);
+		margin-top: 17px;
+	}
+	.search{
+		width:235px;
+		height:67px;
+		float:right;
+		margin-right: 25px;
+	}
+	.search-top{
+		float: right;
+	}
+	.search-bot{
+		width: 225px;
+		height: 27px;
+		margin-right: -7px;
+		float: right;
+	}
+	form{
+		border-top: 1px #ccc solid;
+		border-bottom: 1px #ccc solid;
+		border-left: 1px #ccc solid;
+		border-right: 1px #ccc solid;
+		margin-top: 15px;
+		margin-right: 7px;
+		float: left;
+	}
+	.search img{
+		float: right;
+	}
+	.nav{
+		width:984px;
+		height:32px;
+		float:left;
+		background-color: #cc0021;
+	}
+	.nav a{
+		display: block;
+		width: 105px;height: 31px;
+		text-decoration: none;
+		margin-left: 4px;
+		line-height: 32px;
+		color: white;
+		float: left;
+		text-align: center;
+		font-size: 18px;
+	}
+	.nav a:hover{
+		background-color: #5a5a5a;
+	}
+	.banner{
+		width:993px;
+		height:302px;
+	}
+	.main{
+		width:989px;
+		height:434px;
+		margin-left:8px;
+	}
+	.main-top{
+		height:84px;
+	}
+	.xinpian{
+		width:243px;
+		height:84px;
+		float:left;
+		border:1px #ccc solid;
+		background-image: url(images/xinpian-jianbian.jpg);
+	}
+	.xinpian-img{
+		float: left;
+		margin-left: 37px;
+		margin-left: 23px;
+		margin-top: 5px;
+	}
+	.xinpian-right{
+		width: 148px;
+		height: 81px;
+		float: right;
+		margin-top: 12px;
+		margin-right: 20px;
+	}
+	.xianpian-right-p1{
+		font-weight: bold;
+	}
+	.xianpian-right-p2{
+		margin-top: 6px;
+	}
+	.main-top a{
+		width: 68px;
+		height: 18px;
+		text-decoration: none;display: block;
+		background-color: #818181;
+		color: #fbfbfb;
+		margin-top: 8px;
+		font-size: 8px;line-height: 18px;
+		text-align: center;
+	}
+	.sanjiao{
+		margin-left: 5px;
+	}
+	.dianyuan{
+		width:249px;
+		height:84px;
+		float:left;
+		border:1px #ccc solid;
+		background-image: url(images/dianyuan-jianbian.jpg);
+	}
+	.dianyuan-img{
+		float: left;
+		margin-left: 25px;
+		margin-top: 5px;
+	}
+	.dianyuan-right{
+		width: 145px;
+		height: 78px;
+		float: right;
+		margin-top: 12px;
+	}
+	.dianyuan-right-p1{
+		font-weight: bold;
+	}
+	.dianyuan-right-p2{
+		margin-top: 6px;
+	}
+	.dengju{
+		width:241px;
+		height:84px;
+		float:left;
+		border:1px #ccc solid;
+		background-image: url(images/dengju-jianbian.jpg);
+	}
+	.dengju-img{
+		float: left;
+		margin-left: 15px;
+		margin-top: 5px;
+	}
+	.dengju-right{
+		width: 144px;
+		height: 78px;
+		float: right;
+		margin-top: 12px;
+		margin-right: -6px;
+	}
+	.dengju-right-p1{
+		font-weight: bold;
+	}
+	.dengju-right-p2{
+		margin-top: 6px;
+	}
+	.mokuai{
+		width:240px;
+		height:86px;
+		float:left;
+		border:1px #ccc solid;
+		background-image: url(images/mokuai.jpg);
+	}
+    .mokuai-img{
+    	float: left;
+    	margin-top: 5px;
+    	margin-left: 7px;
+    }
+    .mokuai-right{
+    	width: 144px;
+    	height: 78px;
+    	float: right;
+    	margin-top: 12px;
+    	margin-right: -6px;
+    }
+    .mokuai-right-p1{
+    	font-weight: bold;
+    }
+    .mokuai-right-p2{
+    	margin-top: 6px;
+    }
+	.main-bot{
+		height:348px;
+		margin-top: 27px;
+		background-color:e3ac16;
+	}
+	.tuijian{
+		width:290px;
+		height:293px;
+		float:left;
+		margin-left:23px;
+	}
+	.tuijian ul{
+		display: block;
+		width: 100px;
+		height: 12px;
+		float: right;
+	}
+	.tuijian  li{
+		display: block;
+		width: 13px;
+		height: 13px;
+		float: left;
+		margin-left: 2px;
+	}
+	.tuijian li a{
+		display: block;
+		width: 13px;
+		height: 13px;
+		text-decoration: none;
+		float:left;
+		background-color: #ccc;
+		font-size: 10px;
+		text-align:center;
+		color: #f8f8fe;
+
+	}
+	.tuijian li a:hover{
+        background-color: red;
+	}
+	.main-bot h3{
+		color: #686e60;
+		font-weight: bold;
+		float: left;
+	}
+	.tuijian-p2{
+		font-size: 11px;
+		line-height: 20px;
+	}
+	.tuijian-top{
+		width: 282px;
+		height: 164px;
+		border-top: 1px #e8e8e8 solid;
+		border-bottom: 1px #e8e8e8 solid;
+		border-left: 1px #e8e8e8 solid;
+		border-right: 1px #e8e8e8 solid;
+		margin-top: 28px;
+
+	}
+	.tuijian-p2{
+		margin-top: 12px;
+		color: #6d6d6d;
+	}
+	.tuijian-a{
+		width: 80px;
+		height: 23px;
+		text-decoration: none;
+		color: #f8f8fe;
+		display: block;
+		background-color: #cc0021;
+		text-align: center;
+		line-height: 23px;
+		margin-top: 12px;
+	}
+	.dongtai{
+		width:355px;
+		height:297px;
+		float:left;
+		margin-left:23px;
+	}
+	.dongtai-p{
+		color: #686e60;
+		margin: 0;
+		float: left;
+		font-weight: bold;
+	}
+	.dongtai a{
+		float: right;
+		color: #bb0128;
+		text-decoration: none;
+		margin-top: 8px;
+	}
+	.dongtai ul{
+		list-style: none;
+		margin-top: 29px;	
+	}
+	.dongtai li{
+		display: block;
+		width: 337px;
+		height: 10px;
+		margin-top: 9px;
+		background-image: url(images/dongtai.png);
+		background-repeat: no-repeat;
+		text-indent: 3px;
+		line-height: 12px;
+		border-top:1px #ccc dashed;
+		padding: 9px;
+		background-position: 0 13px;
+		font-size: 12px;
+	}
+	.dongtai span{
+		margin-top: 10px;
+		font-size: 6px;
+		color: #bbbbbb;
+		margin-left: 5px;
+	}
+	
+	.yingyong{
+		width:273px;
+		height:348px;
+		float:left;
+		margin-left:23px;
+	}
+	.yingyong p{
+		color: #686e60;
+		margin: 0;
+		float: left;
+		font-weight: bold;
+	}
+	.yingyong a{
+		float: right;
+		color: #bb0128;
+		text-decoration: none;
+		margin-top: 8px;
+	}
+	.yingyong img{
+		margin-top: 3px;
+
+	}
+	.yingyong ul{
+		margin-top: 13px;
+		margin-left: 19px;
+		list-style: square;
+		color: #4d4d4d;
+	}
+	.yingyong li{
+		margin-top: 13px;
+	}
+	.footer{
+		height:46px;
+		background-color:#494949;
+		margin-left:8px;
+	}
+	.footer-p1{
+		float: left;
+		line-height: 0px;
+		margin-left: 35px;
+		color: #f8f8fe;
+	}
+	.footer-p2{
+		float: right;
+		line-height: 0px;
+		margin-right: 30px;
+		color: #f8f8fe;
+	}
+	.footer-p1 a{
+		text-decoration: none;
+		color: #f8f8fe;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="top">
+				<div class="logo"></div>
+				<div class="search">
+					<div class="search-top">
+						<p>中文版丨ENGLISH</p>
+					</div>
+					<div class="search-bot">
+						<form>
+							<input ><img src="images/search.png">
+						</form>
+						
+					</div>
+				</div>
+				<div class="nav">
+					<a href="#">首页</a>
+					<a href="#">关于我们</a>
+					<a href="#">产品中心</a>
+					<a href="#">新闻中心</a>
+					<a href="#">产品应用</a>
+					<a href="#">商务合作</a>
+					<a href="#">服务与支持</a>
+					<a href="#">人力资源</a>
+					<a href="#">联系我们</a>
+				</div>
+			</div>
+			<div class="banner">
+				<img src="images/banner.jpg">
+			</div>
+		</div>
+		<div class="main">
+			<div class="main-top">
+				<div class="xinpian">
+					<img src="images/xinpian.png" class="xinpian-img">
+					<div class="xinpian-right">
+						<p class="xianpian-right-p1">芯片封装</p>
+						<p class="xianpian-right-p2">优越品质 绿色环保</p>
+						<a href="#">详细介绍<img src="images/sanjiao.png" class="sanjiao"></a>
+					</div>
+				</div>
+				<div class="dianyuan">
+					<img src="images/dianyuan.png" class="dianyuan-img">
+					<div class="dianyuan-right">
+						<p class="dianyuan-right-p1">LED电源</p>
+						<p class="dianyuan-right-p2">专业技术 高效耐用</p>
+						<a href="#">详细介绍<img src="images/sanjiao.png" class="sanjiao"></a>
+					</div>
+				</div>
+				<div class="dengju">
+					<img src="images/dengju.png" class="dengju-img">
+					<div class="dengju-right">
+						<p class="dengju-right-p1">LED灯具</p>
+						<p class="dengju-right-p2">领先科技 节能高效</p>
+						<a href="#">详细介绍<img src="images/sanjiao.png" class="sanjiao"></a>
+					</div>
+				</div>
+				<div class="mokuai">
+					<img src="images/mokuai.png" class="mokuai-img">
+					<div class="mokuai-right">
+						<p class="mokuai-right-p1">通讯模块</p>
+						<p class="mokuai-right-p2">超强信号 优质体验</p>
+						<a href="#">详细介绍<img src="images/sanjiao.png" class="sanjiao"></a>
+					</div>
+				</div>
+			</div>
+			<div class="main-bot">
+				<div class="tuijian">
+					    <h3>新品推荐</h3>
+					    <ul>
+					    	<li><a href="">1</a></li>
+					    	<li><a href="">2</a></li>
+					    	<li><a href="">3</a></li>
+					    	<li><a href="">4</a></li>
+					    	<li><a href="">5</a></li>
+					    	<li><a href="">6</a></li>
+					    </ul>
+					<div class="tuijian-top">
+						<img src="images/tuijian.png">
+					</div>
+					<p class="tuijian-p2">
+						ADAVO品牌是基于说的就是算法时发生的巨变读书笔记不仅是对萨芬是大部分将
+						深发覅偶奇偶欧舒丹V家咳嗽的剧啊晚饭前是否水电费试试看呢是看你富士康
+					</p>
+					<a href="#" class="tuijian-a">详细介绍》</a>
+				</div>
+				<div class="dongtai">
+					<h3>新闻动态</h3>
+					<a href="">MORE》</a>
+					<ul>
+					    <li>
+					    	<p class="dongtai-li-p1">华阳热看LED产业，组建光点热流项目激情扬帆</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>二零一二年LED国际研讨会</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>华阳LED扬帆远航</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>惠州是LED路灯项目</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>创建二零一二——走进新成立的业务部</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>华阳高科技产品全线亮线</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					    <li>
+					    	<p>华阳集团再获全国信保AAA级</p>
+					    	<span>2012-10-10</span>
+					    </li>
+					</ul>
+					
+				</div>
+				<div class="yingyong">
+					<h3>产品应用</h3>
+					<a href="#">MORE》</a>
+					<img src="images/yingyong.gif">
+					<ul>
+						<li>惠州市重点路段LED路灯项目</li>
+						<li>惠州市重点路段LED路灯项目</li>
+						<li>惠州市重点路段LED路灯项目</li>
+						<li>惠州市重点路段LED路灯项目</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="footer">
+					<p class="footer-p1"><a href="#">网站地图</a>丨<a href="#">访问统计</a>丨<a href="#">友情链接</a>丨<a href="#">法律声明</a></p>
+					<p class="footer-p2">华阳集团有限公司 版权所有</p>
+			</div>
+	</div>
+</body>
+</html>
